@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-md-5 chat-col">
+                    <ul id="messages"></ul>
+                    <form>
+                        <input id="msg" autocomplete="off" placeholder="Type your message..." />
+                        <button id="send">Send</button>
+                    </form>
+                </div>
+                <div class="col col-md-7">
+                    <h2>Tic-Tac-Toe</h2>
+                    <br>
+                    <div class="row game-row">
+                        <div class="col col-12 players-col">
+                            <div class="players">
+                                <p id="turn-message">Waiting for opponent...</p>
+                            </div>
+                            <div class="game-board">
+                                <button id="a1"></button>
+                                <button id="a2"></button>
+                                <button id="a3"></button>
+                                <button id="b1"></button>
+                                <button id="b2"></button>
+                                <button id="b3"></button>
+                                <button id="c1"></button>
+                                <button id="c2"></button>
+                                <button id="c3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="js/client.js"></script>
+</body>
+
+</html>

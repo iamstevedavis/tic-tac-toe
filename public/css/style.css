@@ -1,0 +1,124 @@
+/**** General Styles ****/
+* { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+}
+
+body { 
+      font: 20px sans-serif; 
+}
+
+/**** Chat ****/
+form {
+      display: flex;
+      background: #000; 
+      padding: 3px; 
+      max-width: 100%;
+}
+
+form input { 
+      width: 100%;
+      border: 0; 
+      padding: 10px; 
+      margin-right: .5%;
+      font-size: 1em;
+}
+
+form button { 
+      width: 15%; 
+      background: rgb(130, 224, 255); 
+      border: none; padding: 10px; 
+      font-size: 1em;
+}
+
+#messages { 
+      list-style-type: none; 
+      margin: 0; padding: 0; 
+}
+
+#messages li { 
+      padding: 5px 10px; 
+}
+
+#messages li:nth-child(odd) { 
+      background: #eee; 
+}
+
+.chat-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100vh;
+      border-right: 1px solid grey;
+      padding-bottom: 10px;
+}
+
+/**** Bootstrap Overrides ****/
+.wrapper,
+.container-fluid {
+      height: 100vh;
+}
+
+/**** Tic-Tac-Toe Game ****/
+button {
+      padding: 20px;
+      border: transparent;
+}
+
+span {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid black;
+}
+
+span p {
+      margin-bottom: 0;
+      padding: 0;
+}
+
+.game-board {
+      width: 350px;
+      margin: auto;
+      background-color: 'goldenrod';
+      text-align: center;
+}
+
+.game-board button {
+      width: 109px;
+      height: 105px;
+      margin: 0px;
+      padding: 0px;
+      float: left;
+      margin-right: 7px;
+      margin-bottom: 7px;
+      font-size: 3em
+}
+
+.game-row {
+      text-align: center;
+}
+
+.col-md-7 {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.players {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+}
+
+.players-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+
+
